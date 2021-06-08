@@ -4,7 +4,7 @@
 let user = prompt('Please enter your name.');
 
 // Creating a personalized greeting when there's an input from the user
-if (user != '' || user != null){
+if (user !== '' && user !== null){
   alert('Hi, ' + user + '! Welcome to this page to learn about me. Before we start, I would love to learn something about you first by asking you these five questions.');
 }
 
