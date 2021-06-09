@@ -1,0 +1,26 @@
+body{
+  box-sizing: border-box;
+  background-color: silver;
+}
+
+header{
+  text-align: center;
+}
+
+h1{
+  font-size: 2em;
+  color: cornflowerblue;
+}
+
+img{
+  width: 30%;
+  margin: 20px auto;
+}
+
+ul{
+  list-style: circle;
+}
+
+ol{
+  list-style: decimal;
+}
