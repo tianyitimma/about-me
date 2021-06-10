@@ -17,10 +17,10 @@ img{
   margin: 20px auto;
 }
 
-ul{
+ul li{
   list-style: circle;
 }
 
-ol{
+ol li{
   list-style: decimal;
 }
