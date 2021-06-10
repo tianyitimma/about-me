@@ -18,4 +18,4 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 ### Paired Lab
 
 I was Navigator on: https://github.com/tianyitimma/about-me/commit/945706da8629728c855a0f81d2e53fa58b526eb6
-I was Driver on:
+I was Driver on: https://github.com/DevJessParker/about-me/commit/b69a454c514839f2eab25bbccd5a2f814121ddd2
