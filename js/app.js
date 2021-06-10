@@ -12,6 +12,8 @@ let correctCount = 0;
 
 // 5 prompts that accecpt y/n or yes/no
 // Q1
+function Q1 () {
+
 let sport = prompt('Do you play any sports? Please answer yes or no.');
 let sportLower = sport.toLowerCase();
 console.log(sport);
@@ -29,7 +31,12 @@ while (sportLower !== 'y' && sportLower !== 'yes' && sportLower !== 'n' && sport
   } else if (sportLower === 'n' || sportLower === 'no'){
     alert('Maybe we can find something else to do.');
   } 
+}
+
+Q1();
+
 // Q2
+function Q2 () {
 let games = prompt('Do you play any games? Please answer yes or no.');
 let gamesLower = games.toLowerCase();
 console.log(games);
@@ -43,11 +50,14 @@ while (gamesLower !== 'y' && gamesLower !== 'yes' && gamesLower !== 'n' && games
     alert('Great! I love to play games!');
     correctCount++;
   } else if (gamesLower === 'n' || gamesLower === 'no'){
-    alert('Maybe we can find something else to do.');
-    
+    alert('Maybe we can find something else to do.'); 
   } 
+}
+
+Q2();
 
 // Q3
+function Q3 () {
 let videoGames = prompt('Do you play any video games? Please answer yes or no.');
 let videoGamesLower = videoGames.toLowerCase();
 console.log(videoGames);
@@ -63,8 +73,12 @@ while (videoGamesLower !== 'y' && videoGamesLower !== 'yes' && videoGamesLower !
   } else if (videoGamesLower === 'n' || videoGamesLower === 'no'){
     alert('Maybe we can find something else to do.');
   } 
+}
+
+Q3();
 
 // Q4
+function Q4 () {
 let movie = prompt('Do you like to watch movie? Please answer yes or no.');
 let movieLower = movie.toLowerCase();
 console.log(movie);
@@ -80,8 +94,12 @@ while (movieLower !== 'y' && movieLower !== 'yes' && movieLower !== 'n' && movie
   } else if (movieLower === 'n' || movieLower === 'no'){
     alert('Maybe we can find something else to do.');
   } 
+}
+
+Q4();
 
 // Q5
+function Q5() {
 let ufo = prompt('Have you ever seen a UFO? Please answer yes or no.');
 let ufoLower = ufo.toLowerCase();
 console.log(ufo);
@@ -97,9 +115,12 @@ while (ufoLower !== 'y' && ufoLower !== 'yes' && ufoLower !== 'n' && ufoLower !=
   } else if (ufoLower === 'n' || ufoLower === 'no'){
     alert('Me neither. Let me know if you see one in the future.');
   } 
+}
+
+Q5();
 
 // Q6
-
+function Q6() {
 let numberOfTries = 4;
 let myNumber = Math.floor(Math.random() *100) + 1;
 console.log(numberOfTries, myNumber);
@@ -128,9 +149,12 @@ while (numberOfTries > 1) {
 if (result == false){
   alert('My favorite number is ' + myNumber + '.');
 }
+}
+
+Q6();
 
 // Q7 multiple possible correct answers that are srored in an array, 6 attempts, end with a correct answer or run out of attempts, display all the correct answer 
-
+function Q7() {
 let myFruit = ['watermelon', 'peach', 'cherry', 'figs', 'mango'];
 let numberForQ7 = 6;
 let resultForQ7 = false;
@@ -166,7 +190,8 @@ while (numberForQ7 > 0 && resultForQ7 == false){
 if (resultForQ7 == false){
   alert('My favorite fruits are ' + myFruit + '.');
 }
+}
 
-
+Q7();
 
 alert('Thank you, ' + user + '! You got ' + correctCount + ' out of 7 correct. Now it\'s time for you to learn about me.');
