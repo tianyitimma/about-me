@@ -3,10 +3,15 @@
 // Get the user name
 let user = prompt('Please enter your name.');
 
-// Creating a personalized greeting when there's an input from the user
-if (user !== '' && user !== null){
-  alert('Hi, ' + user + '! Welcome to this page to learn about me. Before we start, I would love to learn something about you first by asking you these seven questions.');
+// Making sure the user name are letters
+while (!user || !(/[a-zA-Z]/).test(user)) {
+  user = prompt('It\'s not a proper name. Please enter your name.');
 }
+
+// Creating a personalized greeting when there's an input from the user
+
+  alert('Hi, ' + user + '! Welcome to this page to learn about me. Before we start, I would love to play a guessing game with you.');
+
 
 let correctCount = 0;
 
@@ -14,10 +19,10 @@ let correctCount = 0;
 // Q1
 function Q1 () {
 
-let sport = prompt('Do you play any sports? Please answer yes or no.');
+let sport = prompt('Do I play any sports? Please answer yes or no.');
 let sportLower = sport.toLowerCase();
-console.log(sport);
-console.log(sportLower);
+//console.log(sport);
+//console.log(sportLower);
 
 // only accept y/n or yes/no
 
@@ -26,10 +31,10 @@ while (sportLower !== 'y' && sportLower !== 'yes' && sportLower !== 'n' && sport
   sportLower = sport.toLowerCase();
 }
   if (sportLower === 'y' || sportLower === 'yes'){
-    alert('Awesome! I love to play sports too!');
+    alert('I love to play tennis.');
     correctCount++;
   } else if (sportLower === 'n' || sportLower === 'no'){
-    alert('Maybe we can find something else to do.');
+    alert('Nice try, but I do like to play tennis.');
   } 
 }
 
@@ -37,20 +42,20 @@ Q1();
 
 // Q2
 function Q2 () {
-let games = prompt('Do you play any games? Please answer yes or no.');
+let games = prompt('Do I like to play board games? Please answer yes or no.');
 let gamesLower = games.toLowerCase();
-console.log(games);
-console.log(gamesLower);
+//console.log(games);
+//console.log(gamesLower);
 
 while (gamesLower !== 'y' && gamesLower !== 'yes' && gamesLower !== 'n' && gamesLower !== 'no'){
   games = prompt('Please answer yes or no only.');
   gamesLower = games.toLowerCase();
 }
   if (gamesLower === 'y' || gamesLower === 'yes'){
-    alert('Great! I love to play games!');
+    alert('Great! I love to play Agricola!');
     correctCount++;
   } else if (gamesLower === 'n' || gamesLower === 'no'){
-    alert('Maybe we can find something else to do.'); 
+    alert('Maybe I can show you my collections.'); 
   } 
 }
 
@@ -58,20 +63,20 @@ Q2();
 
 // Q3
 function Q3 () {
-let videoGames = prompt('Do you play any video games? Please answer yes or no.');
+let videoGames = prompt('Do I play any video games? Please answer yes or no.');
 let videoGamesLower = videoGames.toLowerCase();
-console.log(videoGames);
-console.log(videoGamesLower);
+//console.log(videoGames);
+//console.log(videoGamesLower);
 
 while (videoGamesLower !== 'y' && videoGamesLower !== 'yes' && videoGamesLower !== 'n' && videoGamesLower !== 'no'){
   videoGames = prompt('Please answer yes or no only.');
   videoGamesLower = videoGames.toLowerCase();
 }
   if (videoGamesLower === 'y' || videoGamesLower === 'yes'){
-    alert('Nice! I love to play halo!');
+    alert('Nice! I love to play Halo!');
     correctCount++;
   } else if (videoGamesLower === 'n' || videoGamesLower === 'no'){
-    alert('Maybe we can find something else to do.');
+    alert('Nice try, but I do like to play Halo.');
   } 
 }
 
@@ -79,20 +84,20 @@ Q3();
 
 // Q4
 function Q4 () {
-let movie = prompt('Do you like to watch movie? Please answer yes or no.');
+let movie = prompt('Do I like supper hero movies? Please answer yes or no.');
 let movieLower = movie.toLowerCase();
-console.log(movie);
-console.log(movieLower);
+//console.log(movie);
+//console.log(movieLower);
 
 while (movieLower !== 'y' && movieLower !== 'yes' && movieLower !== 'n' && movieLower !== 'no'){
   movie = prompt('Please answer yes or no only.');
   movieLower = movie.toLowerCase();
 }
   if (movieLower === 'y' || movieLower === 'yes'){
-    alert('Wonderful! Let\'s watch movie next week.');
+    alert('Wonderful! I really like Iron Man');
     correctCount++;
   } else if (movieLower === 'n' || movieLower === 'no'){
-    alert('Maybe we can find something else to do.');
+    alert('Nice try, but I do like Iron Man.');
   } 
 }
 
@@ -100,20 +105,20 @@ Q4();
 
 // Q5
 function Q5() {
-let ufo = prompt('Have you ever seen a UFO? Please answer yes or no.');
-let ufoLower = ufo.toLowerCase();
-console.log(ufo);
-console.log(ufoLower);
+let code = prompt('Do I like to code? Please answer yes or no.');
+let codeLower = code.toLowerCase();
+//console.log(code);
+//console.log(codeLower);
 
-while (ufoLower !== 'y' && ufoLower !== 'yes' && ufoLower !== 'n' && ufoLower !== 'no'){
-  ufo = prompt('Please answer yes or no only.');
-  ufoLower = ufo.toLowerCase();
+while (codeLower !== 'y' && codeLower !== 'yes' && codeLower !== 'n' && codeLower !== 'no'){
+  code = prompt('Please answer yes or no only.');
+  codeLower = code.toLowerCase();
 }
-  if (ufoLower === 'y' || ufoLower === 'yes'){
-    alert('Really! Did you take a picture by any chance?');
+  if (codeLower === 'y' || codeLower === 'yes'){
+    alert('I do like to code');
     correctCount++;
-  } else if (ufoLower === 'n' || ufoLower === 'no'){
-    alert('Me neither. Let me know if you see one in the future.');
+  } else if (codeLower === 'n' || codeLower === 'no'){
+    alert('It was close. I wasn\'t like to code when I was in undergrad.');
   } 
 }
 
@@ -129,7 +134,7 @@ let guess = prompt('Can you guess what is my favorite number between 1 to 100? Y
 // asking for 4 times
 while (numberOfTries > 1) {
   numberOfTries--;
-  console.log(numberOfTries);
+  //console.log(numberOfTries);
 
   if (guess == myNumber){
     alert('You got it right! My favorite number is ' + myNumber + '.');
